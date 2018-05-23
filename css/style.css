@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Allura');
+
+main {
+    width: 60%;
+    margin: 100px auto;
+    text-align: center;
+    font-family: 'Roboto';
+    color:#333333;
+}
+
+.quote {
+    font-family: 'Allura';
+    padding: 30px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-weight: 200;
+}
+
+button {
+    display: block;
+    margin: 40px auto;
+    margin-top: 100px;
+    padding: 10px;
+    background-color: #75ceff;
+    color: white;
+    font-family: Roboto;
+    border: none;
+    box-shadow: 2px 2px 5px black;
+    font-size: 20px;
+}
+
+a {
+    margin: 30px;
+    text-decoration: none;
+    color: black;
+    color: #75ceff;
+    font-family: Roboto;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+i {
+    text-decoration: none;
+    color: black;
+    color: #75ceff;
+    font-size: 25px;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
