@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Allura');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
 main {
     width: 60%;
     margin: 100px auto;
     text-align: center;
-    font-family: 'Roboto';
+    font-family: 'Raleway';
     color:#333333;
 }
 
@@ -24,7 +24,6 @@ button {
     padding: 10px;
     background-color: #75ceff;
     color: white;
-    font-family: Roboto;
     border: none;
     box-shadow: 2px 2px 5px black;
     font-size: 20px;
@@ -35,7 +34,6 @@ a {
     text-decoration: none;
     color: black;
     color: #75ceff;
-    font-family: Roboto;
 }
 
 button:hover {
