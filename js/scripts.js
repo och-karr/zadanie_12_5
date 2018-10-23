@@ -20,7 +20,8 @@ function getQuote() {
 function createTweet(input) {
     var data = input[0];
 
-	var quoteText = $(data.content).text().trim();
+	var quoteConent = $(data.content).text().trim();
+	var quoteText = quoteConent.charAt(0).toUpperCase() + quoteConent.substr(1).toLowerCase();
 	//data.content - klucz, kod html paragrafu
 	//text - wyciagamy text z data.content
 	//trim - ucinamy niepotrzebne spacje
