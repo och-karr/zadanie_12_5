@@ -1,23 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Allura');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
-main {
-    width: 60%;
-    margin: 100px auto;
+.main {
+    padding-top: 20px;
     text-align: center;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     color:#333333;
 }
 
 .quote {
-    font-family: 'Allura';
+    font-family: 'Allura', sans-serif;
     padding: 30px;
     padding-bottom: 10px;
     font-size: 30px;
     font-weight: 200;
 }
 
-button {
+.random {
     display: block;
     margin: 40px auto;
     margin-top: 100px;
@@ -25,24 +24,21 @@ button {
     background-color: #75ceff;
     color: white;
     border: none;
-    box-shadow: 2px 2px 5px black;
+    box-shadow: 2px 2px 5px #000;
     font-size: 20px;
-}
-
-a {
-    margin: 30px;
-    text-decoration: none;
-    color: black;
-    color: #75ceff;
-}
-
-button:hover {
     cursor: pointer;
 }
 
-i {
+.tweet {
+    margin: 30px;
     text-decoration: none;
-    color: black;
+    color: #000;
+    color: #75ceff;
+}
+
+.fab {
+    text-decoration: none;
+    color: #000;
     color: #75ceff;
     font-size: 25px;
 }

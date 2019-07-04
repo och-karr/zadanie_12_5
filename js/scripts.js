@@ -1,14 +1,11 @@
 var prefix = "https://cors-anywhere.herokuapp.com/";
 var tweetLink = "https://twitter.com/intent/tweet?text="; 
-//link do wysylania tweetow na tweetera (bez tresci)
 var quoteUrl = "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1";
-//link pobierajacy cytaty
 
 function getQuote() {
 	$.getJSON(prefix + quoteUrl, createTweet);
 	$.ajaxSetup({ cache: false });
 }
-
 //skrot od:
 // $.ajax({
 //     dataType: "json", - te wartosci zostana przyjete domyslnie
@@ -22,12 +19,11 @@ function createTweet(input) {
 
 	var quoteConent = $(data.content).text().trim();
 	var quoteText = quoteConent.charAt(0).toUpperCase() + quoteConent.substr(1).toLowerCase();
-	//data.content - klucz, kod html paragrafu
 	//text - wyciagamy text z data.content
 	//trim - ucinamy niepotrzebne spacje
     var quoteAuthor = data.title;
 
-    if (!quoteAuthor.length) { //lenght = 0 --> false, !length = 0 --> true
+    if (!quoteAuthor.length) {
         quoteAuthor = "Unknown author";
 	}
 	
@@ -37,8 +33,8 @@ function createTweet(input) {
 		getQuote();
 	} else {
 		var tweet = tweetLink + encodeURIComponent(tweetText);
-		$('.quote').text(quoteText); //tresc cytatu
-		$('.author').text("Author: " + quoteAuthor); //autor cytatu
+		$('.quote').text(quoteText);
+		$('.author').text("Author: " + quoteAuthor);
 		$('.tweet').attr('href', tweet);
 	}
 
@@ -46,7 +42,7 @@ function createTweet(input) {
 
 $(document).ready(function() {
 	getQuote();
-	$('.trigger').click(function() {
+	$('.random').click(function() {
 		getQuote();
 	})
 });
